@@ -13,9 +13,6 @@ def get_query():
         search_query = request.form.get("search_query")
         count = int(request.form.get("count"))
     
-    if not count:
-        count = 10
-        
     client = TwitterClient()
     tweet_sentiments = client.get_tweets(search_query, count = count)
 
