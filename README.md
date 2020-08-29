@@ -1,5 +1,5 @@
 # Twitter Sentiment Analysis app
-A simple web application made in Python and Flask.
+A simple web application made in Python and Flask. (Unfinished)
 Utilizes the Tweepy API and the TextBlob API to perform sentiment analysis on Tweets on Twitter
 
 ## Setup
