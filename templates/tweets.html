@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <ul>
+        {% for tweet_sentiment in tweet_sentiments %}
+        <li>Tweet: {{tweet_sentiment["tweet"].text}} Sentiment polarity: {{tweet_sentiment["sentiment"].polarity}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

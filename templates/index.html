@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Enter your topic</h1>
+    <p>Tweets on this topic will be collected and its sentiment analyzed</p>
+    <form action="/topic" method="post">
+        <label for="search_query">Topic:</label>
+        <input type="text" name="search_query" placeholder="Topic">
+        <label for="count">How many tweets to be analyzed:</label>
+        <input type="number" name="count">
+        <input type="submit">
+    </form>
+{% endblock %}
